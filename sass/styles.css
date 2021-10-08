@@ -266,4 +266,150 @@ p {
   width: 35ch;
   font-size: 1rem;
 }
+
+.about {
+  padding: 5em 0;
+}
+
+.about_inner {
+  display: flex;
+  grid-gap: 5em;
+  align-items: center;
+}
+
+.about_right, .about_left {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  gap: 0.5em;
+}
+
+.about_title {
+  text-align: left;
+}
+
+.about_grid {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+
+.about_video {
+  border-radius: 15px;
+}
+
+.pointer {
+  display: flex;
+  gap: 0.3em;
+}
+
+.pointer_icon {
+  color: #3F78E0;
+  background: #F1F5FD;
+  height: 25px;
+  width: 25px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 8888253992px;
+}
+
+.pointer_icon i {
+  font-size: 0.8rem;
+  transform: translateY(1px);
+}
+
+.team {
+  padding: 5em 0;
+}
+
+.team_inner {
+  display: flex;
+  gap: 3em;
+}
+
+.team_left {
+  width: 35%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.team_grid {
+  width: 65%;
+  display: flex;
+  grid-gap: 1em;
+}
+
+.team_title {
+  text-align: left;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.7em;
+}
+
+.member_image {
+  height: 180px;
+  border-radius: 8888253992px;
+}
+
+.member_socials {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.member_socials i {
+  cursor: pointer;
+}
+
+.review {
+  padding: 10em 0 5em;
+}
+
+.review_inner {
+  height: 400px;
+  background: #F1F5FD;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 15px;
+}
+
+.review_image {
+  height: 500px;
+  max-height: unset;
+  align-self: flex-end;
+}
+
+.review_desc {
+  width: 50ch;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.review_text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.7;
+  gap: 1em;
+}
+
+.review_rating {
+  color: #FCC032;
+  font-size: 0.7rem;
+}
+
+.review_author {
+  font-size: 1.35rem;
+}
 /*# sourceMappingURL=styles.css.map */
