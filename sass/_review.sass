@@ -12,7 +12,7 @@
         max-height: unset
         align-self: flex-end
     &_desc
-        width: 50ch
+        max-width: 50ch
         font-size: 1.3rem
         text-align: center
     &_text
@@ -26,3 +26,10 @@
         font-size: 0.7rem
     &_author
         font-size: 1.35rem
+
+@media screen and ( max-width: 1000px )
+    .review_image
+        display: none
+    .review_inner
+        height: auto
+        padding: 2em

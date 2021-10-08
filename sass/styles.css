@@ -82,7 +82,7 @@ p {
 
 .section_desc {
   font-size: 1.1rem;
-  width: 40ch;
+  max-width: 40ch;
 }
 
 .contact {
@@ -112,6 +112,19 @@ p {
 
 .contact_icon {
   margin-right: 0.3em;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact_inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7em;
+  }
+  .contact_right {
+    gap: 0.7em;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .header {
@@ -158,6 +171,10 @@ p {
   border-radius: 10px;
 }
 
+.clients {
+  padding: 3em 0;
+}
+
 .clients_inner {
   display: flex;
   align-items: center;
@@ -166,6 +183,24 @@ p {
 
 .clients_logo {
   height: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .clients_inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5em 0;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .clients_inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .features {
@@ -207,6 +242,13 @@ p {
   color: #3F78E0;
   font-weight: 700;
   font-size: 0.95rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .features_grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
 }
 
 .steps_inner {
@@ -263,8 +305,17 @@ p {
 }
 
 .step_desc {
-  width: 35ch;
+  max-width: 35ch;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .steps_inner {
+    flex-direction: column;
+  }
+  .steps_left {
+    padding: 0;
+  }
 }
 
 .about {
@@ -321,6 +372,15 @@ p {
   transform: translateY(1px);
 }
 
+@media screen and (max-width: 1000px) {
+  .about_inner {
+    flex-direction: column;
+  }
+  .about_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .team {
   padding: 5em 0;
 }
@@ -339,9 +399,10 @@ p {
 }
 
 .team_grid {
+  margin: 0 auto;
   width: 65%;
   display: flex;
-  grid-gap: 1em;
+  gap: 2em;
 }
 
 .team_title {
@@ -371,6 +432,19 @@ p {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1000px) {
+  .team_left {
+    width: unset;
+  }
+  .team_inner {
+    flex-direction: column;
+  }
+  .team_grid {
+    flex-direction: column;
+    gap: 5em;
+  }
+}
+
 .review {
   padding: 10em 0 5em;
 }
@@ -391,7 +465,7 @@ p {
 }
 
 .review_desc {
-  width: 50ch;
+  max-width: 50ch;
   font-size: 1.3rem;
   text-align: center;
 }
@@ -411,6 +485,16 @@ p {
 
 .review_author {
   font-size: 1.35rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .review_image {
+    display: none;
+  }
+  .review_inner {
+    height: auto;
+    padding: 2em;
+  }
 }
 
 .footer {
@@ -466,5 +550,12 @@ p {
   outline: none;
   border-radius: 0;
   border: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer_inner {
+    flex-direction: column;
+    gap: 3em;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,7 +1,22 @@
 .clients
+    padding: 3em 0
     &_inner
         display: flex
         align-items: center
         justify-content: space-evenly
     &_logo
         height: 30px
+
+@media screen and ( max-width: 1000px )
+    .clients_inner
+        display: grid
+        grid-template-columns: repeat(3,1fr )
+        grid-gap: 5em 0
+        align-items: center
+        justify-content: center
+        align-content: center
+        justify-items: center
+
+@media screen and ( max-width: 480px )
+    .clients_inner
+        grid-template-columns: repeat(2,1fr )
