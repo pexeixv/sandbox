@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: black;
+  color: #60697b;
   text-decoration: none;
 }
 
@@ -411,5 +411,60 @@ p {
 
 .review_author {
   font-size: 1.35rem;
+}
+
+.footer {
+  padding: 5em 0;
+}
+
+.footer_inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_col {
+  align-items: flex-start;
+  gap: 1em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_logo {
+  height: 30px;
+}
+
+.footer_socials {
+  display: flex;
+  gap: 0.7em;
+}
+
+.footer_title {
+  font-size: 1.35rem;
+}
+
+.footer_input {
+  height: 50px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.footer_input > * {
+  height: 100%;
+}
+
+.footer_input input {
+  padding-left: 1em;
+  outline: none;
+  border: none;
+}
+
+.footer_input button {
+  font-size: 1rem;
+  outline: none;
+  border-radius: 0;
+  border: none;
 }
 /*# sourceMappingURL=styles.css.map */
