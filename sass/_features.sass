@@ -28,6 +28,15 @@
         color: $pri
         font-weight: 700
         font-size: 0.95rem
+        margin-bottom: 2px
+        &::after
+            width: 0
+            height: 2px
+            display: block
+            background: $pri
+            content: ''
+        &:hover::after
+            width: 100%
 
 @media screen and ( max-width: 1000px )
     .features_grid
