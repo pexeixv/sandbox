@@ -3,7 +3,7 @@
 ## Team #24 - Parvatibai Chowgule College
 
 - [Gavin Pereira](https://github.com/pexeixv)
-- [Saiprasad Naik](https://github.com/sai1001)
+- [Saiprakash Naik](https://github.com/sai1001)
 
 ## Technologies used
 
