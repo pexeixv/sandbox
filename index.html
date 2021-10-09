@@ -6,11 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandbox</title>
+    <link rel="stylesheet" href="sass/splide.min.css">
     <link rel="stylesheet" href="sass/styles.css">
     <link rel="shortcut icon" href="img/fav.png" image/x-icon">
 </head>
 
 <body>
+
+
+    <div class="arrow out" onclick="document.documentElement.scrollTop=0">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 
     <section class="contact contact_outer outer">
         <div class="contact_inner inner">
@@ -29,7 +35,6 @@
                     <i class="fas fa-paper-plane contact_icon"></i>
                     <span class="contact_text">sandbox@email.com</span>
                 </a>
-
             </div>
         </div>
     </section>
@@ -42,7 +47,7 @@
             <nav class="header_nav">
 
                 <div class="dropdown dropdown-demo">
-                    <a href="#" class="drplink">Demo<i class="fas fa-caret-down"></i></a>
+                    <a href="#" class="drplink"><span>Demo</span><i class="fas fa-caret-down"></i></a>
                     <div class="dropdown-content dropdown-content-demo">
                         <img src="img/demos/mi1.jpg">
                         <img src="img/demos/mi2.jpg">
@@ -67,7 +72,7 @@
 
 
                 <div class="dropdown">
-                    <a href="#" class="drplink">Pages<i class="fas fa-caret-down"></i></a>
+                    <a href="#" class="drplink"><span>Pages</span><i class="fas fa-caret-down"></i></a>
                     <div class="dropdown-content">
                         <a href="#">Services</a>
                         <a href="#">About</a>
@@ -78,7 +83,7 @@
                 </div>
 
                 <div class="dropdown">
-                    <a href="#" class="drplink">Projects<i class="fas fa-caret-down"></i></a>
+                    <a href="#" class="drplink"><span>Projects</span><i class="fas fa-caret-down"></i></a>
                     <div class="dropdown-content">
                         <a href="#">Projects&nbsp;I</a>
                         <a href="#">Projects&nbsp;II</a>
@@ -88,7 +93,7 @@
                 </div>
 
                 <div class="dropdown">
-                    <a href="#" class="drplink">Blog<i class="fas fa-caret-down"></i></a>
+                    <a href="#" class="drplink"><span>Blog</span><i class="fas fa-caret-down"></i></a>
                     <div class="dropdown-content">
                         <a href="#">Blog&nbsp;without&nbsp;Sidebar</a>
                         <a href="#">Blog&nbsp;with&nbsp;Sidebar</a>
@@ -101,7 +106,7 @@
 
 
                 <div class="dropdown">
-                    <a href="#" class="drplink">Blocks<i class="fas fa-caret-down"></i></a>
+                    <a href="#" class="drplink"><span>Blocks</span><i class="fas fa-caret-down"></i></a>
                     <div class="dropdown-content">
                         <a href="#">About</a>
                         <a href="#">Blogs</a>
@@ -121,7 +126,7 @@
 
 
                 <div class="dropdown">
-                    <a href="#" class="drplink">Documentation<i class="fas fa-caret-down"></i></a>
+                    <a href="#" class="drplink"><span>Documentation</span><i class="fas fa-caret-down"></i></a>
                 </div>
             </nav>
             <div class="header_cta">
@@ -134,6 +139,12 @@
                     </div>
                 </div>
                 <a href="#" class="btn-pri">Contact</a>
+
+            </div>
+            <div class="burger header_burger">
+                <span class="burger_bar burger_bar1"></span>
+                <span class="burger_bar burger_bar2"></span>
+                <span class="burger_bar burger_bar3"></span>
             </div>
         </div>
     </header>
@@ -313,7 +324,41 @@
 
     <section class="gallery gallery_outer outer">
         <div class="gallery_inner">
-
+            <div class="gallery_small section_small">
+                Latest Projects
+            </div>
+            <h2 class="gallery_title section_title">
+                Check out some of our awesome projects with creative ideas and great design.
+            </h2>
+            <div class="gallery_grid">
+                <div class="splide">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <li class="splide__slide">
+                                <img src="img/projects/1.jpg">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/projects/2.jpg">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/projects/3.jpg">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/projects/4.jpg">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/projects/5.jpg">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/projects/6.jpg">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/projects/7.jpg">
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -530,7 +575,8 @@
         </div>
     </footer>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/splide.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

@@ -1,5 +1,10 @@
 .header
     padding: 2rem 0
+    position: sticky
+    top: 0
+    background: $sec
+    box-shadow: 0 0 5px rgba(black,0.1)
+    z-index: 69
 
 .header_inner
     display: flex
@@ -17,6 +22,10 @@
 .drplink
     padding-bottom: 30px
     font-weight: 700
+
+.header_cta
+    display: flex
+    align-items: center
 
 .dropdown
     display: inline-block
@@ -64,3 +73,54 @@
 .header .fa-caret-down
     margin-left: 0.3em
     color: $pri
+
+.burger
+    cursor: pointer
+    display: inline
+    display: flex
+    flex-direction: column
+    gap: 0.4em
+    &_bar
+        height: 3px
+        width: 25px
+        background: $text
+
+@media screen and ( max-width: 1000px )
+    .header_cta
+        align-items: center
+        flex: 1
+        justify-content: flex-end
+        margin-right: 25px
+    .header_lang
+        align-self: center
+        position: relative
+        top: 15px
+    .header_nav
+        display: none
+        position: absolute
+        flex-direction: column
+        top: 0
+        left: 0
+        z-index: 70
+        align-items: flex-start
+        background: #1E2228
+        padding: 3em
+        min-width: 40vw
+        height: 100vh
+        a.drplink
+            color: $sec
+    .header_nav.shown
+        display: flex
+    .drplink
+        display: flex
+        width: 100%
+        align-items: center
+        justify-content: space-between
+
+.burger.cross
+    .burger_bar1
+        transform: rotate(45deg) translateY(13px)
+    .burger_bar3
+        transform: rotate(-45deg) translateY(-13px)
+    .burger_bar2
+        opacity: 0

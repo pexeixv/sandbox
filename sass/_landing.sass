@@ -21,3 +21,18 @@
         gap: 1em
     &_hero img
         border-radius: 10px
+
+@media screen and ( max-width: 1000px )
+    .main_inner
+        padding: 5em 0
+        flex-direction: column-reverse
+        align-items: center
+        gap: 5em
+    .main_hero
+        display: grid
+        place-items: center
+    .main_left,.main_right
+        min-height: auto
+@media screen and ( min-width: 1000px )
+    .burger
+        display: none
