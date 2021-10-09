@@ -827,6 +827,16 @@ img.main_dots {
   gap: 0.7em;
 }
 
+.footer_socials i {
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 0;
+}
+
+.footer_socials i:hover {
+  bottom: 3px;
+}
+
 .footer_title {
   font-size: 1.35rem;
 }
@@ -892,6 +902,8 @@ img.main_dots {
 
 .splide__slide {
   padding: 1em;
+  position: relative;
+  cursor: pointer;
 }
 
 .splide__pagination {
@@ -901,5 +913,25 @@ img.main_dots {
 
 .splide__pagination__page.is-active {
   background: #464646;
+}
+
+.gallery_link {
+  background: #fff;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  aspect-ratio: 1;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
+  border-radius: 8888253992px;
+  opacity: 0;
+}
+
+.splide__slide:hover .gallery_link {
+  right: 50px;
+  opacity: 1;
 }
 /*# sourceMappingURL=styles.css.map */

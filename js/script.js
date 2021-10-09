@@ -1,3 +1,6 @@
+AOS.init()
+
+
 const burger = document.querySelector('.burger')
 const nav = document.querySelector('.header_nav')
 
