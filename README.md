@@ -7,6 +7,9 @@
 
 ## Technologies used
 
+- HTML
+- SASS
+- Javascript
 - [Google Fonts](https://fonts.google.com/)
 - [Font Awesome](https://fontawesome.com/)
 - [Splide.js](https://splidejs.com/)

@@ -6,8 +6,6 @@ burger.addEventListener('click', () => {
   burger.classList.toggle('cross')
 })
 
-
-
 new Splide('.splide', {
   type: 'loop',
   drag: 'free',
