@@ -231,7 +231,7 @@ p {
 .dropdown-content-demo {
   background: #343F52;
   width: 90vw;
-  top: 130px;
+  top: 100px;
   transform: translateX(-50%);
   left: 50%;
   grid-template-columns: repeat(6, 1fr);
@@ -465,6 +465,10 @@ img.main_dots {
   padding: 5em 0 0;
 }
 
+.features_small {
+  margin-bottom: 15px;
+}
+
 .feature {
   text-align: center;
   display: flex;
@@ -625,6 +629,10 @@ img.main_dots {
 
 .about_hero {
   position: relative;
+}
+
+.about_small {
+  margin-bottom: 10px;
 }
 
 .pointer {
@@ -874,6 +882,10 @@ img.main_dots {
   align-items: center;
 }
 
+.gallery_small {
+  margin-bottom: 15px;
+}
+
 .splide__slide img {
   border-radius: 15px;
 }
@@ -885,5 +897,9 @@ img.main_dots {
 .splide__pagination {
   position: relative;
   top: 15px;
+}
+
+.splide__pagination__page.is-active {
+  background: #464646;
 }
 /*# sourceMappingURL=styles.css.map */
