@@ -324,6 +324,10 @@ p {
     align-items: center;
     justify-content: space-between;
   }
+  .dropdown-content-demo {
+    display: none;
+    opacity: 0;
+  }
 }
 
 .burger.cross .burger_bar1 {
