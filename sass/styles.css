@@ -606,6 +606,9 @@ p {
 }
 
 @media screen and (max-width: 1000px) {
+  .about {
+    padding: 0 0 2em;
+  }
   .about_inner {
     flex-direction: column;
   }
@@ -727,6 +730,9 @@ p {
 }
 
 @media screen and (max-width: 1000px) {
+  .review {
+    padding: 3em 0;
+  }
   .review_image {
     display: none;
   }
